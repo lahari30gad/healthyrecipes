@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    nav {
+        font-weight: bold;
+        background-color: rgba(1, 86, 21, 0.9);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        top: 10px;
+        position: abslute;
+    }
+
+    nav a:not(.name) {
+        float: right;
+    }
+
+    nav a {
+        font-size: 20px;
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .name {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        float: left;
+    }
+
+
+    nav::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .grid-container {
+        position: relative;
+        top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .grid-item {
+        background-color: rgba(203, 243, 206, 0.8);
+        border-radius: 25%;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 400px;
+        max-width: 500px;
+    }
+
+    .grid-item p {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 20px;
+        color: rgb(54, 182, 96)
+    }
+
+    .grid-item h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(16, 86, 28)
+    }
+
+    .grid-item input {
+        background-color: rgba(1, 86, 21, 0.9);
+        color: white;
+        border-color: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bolder;
+    }
+
+    .grid-item img {
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html" class="name">HEALTHY RECIPES</a>
+        <a href="http://127.0.0.1:5500/Dinner.html">Dinner</a>
+        <a href="http://127.0.0.1:5500/Lunch.html">Lunch</a>
+        <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html">Home</a>
+    </nav>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/xTiEfBpvZDf-NPkUAIuJ_0WjEt4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ewl-cinnamon-roll-overnight-oats-268775-hero-03-4000x4000-9009bab3eb234ef1a451fa7b345f08b6.jpg"
+                height="300" width="300">
+            <h2>Cinnamon Roll Overnight Oats</h2>
+            <p>These overnight oats with Greek yogurt, cinnamon, and maple syrup are a great way to start your day.</p>
+            <input type="button" value="View Recipe"
+                onclick="window.location.href='http://127.0.0.1:5500/breakfast1.html'">
+        </div>
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/ZvnfwXXI0ILe8NAgyKwyPSgcn8U=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/6343095-903c372634384b569149a2ecd3f3d422.jpg"
+                height="300" width="300">
+            <h2>Sriracha, Egg & Avocado Overnight Oats</h2>
+            <p>These overnight oats with Greek yogurt, Sriracha, and avocado are a great way to start your day.</p>
+            <input type="button" value="View Recipe"
+                onclick="window.location.href='http://127.0.0.1:5500/breakfast2.html'">
+        </div>
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/RPHl45q06IrWIslseFphG3ljh04=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/spinach-and-feta-quiche-d148d177fd4b406ab22a10acae61b075.jpg"
+                height="300" width="400">
+            <h2>Spinach & Feta Quiche</h2>
+            <p>This quiche with spinach, feta, and eggs is a great way to start your day.</p>
+            <input type="button" value="View Recipe"
+                onclick="window.location.href='http://127.0.0.1:5500/breakfast3.html'">
+        </div>
+
+    </div>
+</body>
+
+</html>

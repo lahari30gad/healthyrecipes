@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    nav {
+        font-weight: bold;
+        background-color: rgba(1, 86, 21, 0.9);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        z-index: 10;
+    }
+
+    nav a:not(.name) {
+        float: right;
+    }
+
+    a {
+        font-size: 20px;
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .name {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        float: left;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://mothersnc.com/cdn/shop/articles/Veggies_Recipes_for_Kids_1000x.jpg?v=1684336210');
+        background-size: cover;
+        background-position: center;
+        color: #000000;
+    }
+
+    .centered {
+        position: absolute;
+        padding: 30px;
+        top: 50%;
+        width: 60%;
+        max-width: 600px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        opacity: 0.8;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    .centered p {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 25px;
+        color: rgb(54, 182, 96)
+    }
+
+    .centered h2 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: bolder;
+        color: rgb(16, 86, 28)
+    }
+
+    nav::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html" class="name">HEALTHY RECIPES</a>
+        <a href="http://127.0.0.1:5500/Dinner.html">Dinner</a>
+        <a href="http://127.0.0.1:5500/Lunch.html">Lunch</a>
+        <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html">Home</a>
+    </nav>
+    <div class="container">
+        <div class="centered">
+            <h2>HEALTHY RECEPIES</h2>
+            <p>Make your life better with our Healthy Recipes</p>
+        </div>
+    </div>
+</body>
+
+</html>

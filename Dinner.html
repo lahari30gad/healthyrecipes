@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    nav {
+        font-weight: bold;
+        background-color: rgba(1, 86, 21, 0.9);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        top: 10px;
+        position: abslute;
+    }
+
+    nav a:not(.name) {
+        float: right;
+    }
+
+    nav a {
+        font-size: 20px;
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .name {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        float: left;
+    }
+
+
+    nav::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .grid-container {
+
+        position: relative;
+        top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .grid-item {
+        background-color: rgba(203, 243, 206, 0.8);
+        border-radius: 25%;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 400px;
+        max-width: 500px;
+    }
+
+    .grid-item p {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 20px;
+        color: rgb(54, 182, 96)
+    }
+
+    .grid-item h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(16, 86, 28)
+    }
+
+    .grid-item input {
+        background-color: rgba(1, 86, 21, 0.9);
+        color: white;
+        border-color: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bolder;
+    }
+
+    .grid-item img {
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html" class="name">HEALTHY RECIPES</a>
+        <a href="http://127.0.0.1:5500/Dinner.html">Dinner</a>
+        <a href="http://127.0.0.1:5500/Lunch.html">Lunch</a>
+        <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html">Home</a>
+    </nav>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/QIWucmlifGGgFIw-cMYxcfQA2KQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/61497551-c8c4a89832a24592a261ed03f5ffeeaa.jpg"
+                height="300" width="300">
+            <h2>Easy Pea & Spinach Carbonaras</h2>
+            <p>Easy Pea & Spinach Carbonaras adds great nutritional value to your diet.</p>
+            <input type="button" value="View Recipe"
+                onclick="window.location.href='http://127.0.0.1:5500/dinner1.html'">
+        </div>
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/LcEo68B8NaO1t8S3Rs5iqEkaY70=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/6450061-835811a0f11f4322bcd9290f62171813.jpg"
+                height="300" width="300">
+            <h2>Pasta with Ricotta & Summer Vegetables</h2>
+            <p>Pasta with Ricotta & Summer Vegetables adds great nutritional value to your diet.</p>
+            <input type="button" value="View Recipe"
+                onclick="window.location.href='http://127.0.0.1:5500/dinner2.html'">
+        </div>
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/jG1oWlQRxzCPxwaPLbFUyEmoGEU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3747954-375f86c89b1e44a08e36c754fb5a4a37.jpg"
+                alt="Cinnamon-Rol" height="300" width="400">
+            <h2>Inside-Out Lasagna</h2>
+            <p>Inside-Out Lasagna adds great nutritional value to your diet.</p>
+            <input type="button" value="View Recipe"
+                onclick="window.location.href='http://127.0.0.1:5500/dinner3.html'">
+        </div>
+
+    </div>
+</body>
+
+</html>

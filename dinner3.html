@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside-Out Lasagna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    nav {
+        font-weight: bold;
+        background-color: rgba(1, 86, 21, 0.9);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        top: 0px;
+        z-index: 10;
+    }
+
+    nav a:not(.name) {
+        float: right;
+    }
+
+    a {
+        font-size: 20px;
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .name {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        float: left;
+    }
+
+    nav::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-container {
+        justify-content: center;
+        position: relative;
+        top: 50px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        border: 3px solid rgb(116, 122, 117);
+        padding: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        box-sizing: auto;
+        max-height: 600px;
+        overflow: auto;
+    }
+
+    .grid-item {
+        background-color: rgba(203, 243, 206, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 30px;
+        text-align: center;
+        width: 1300px;
+        max-width: 1300px;
+        overflow: auto;
+        max-height: 100px;
+    }
+
+    .grid-item li {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 20px;
+        color: rgb(54, 182, 96);
+    }
+
+    .grid-item p {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 20px;
+        color: rgb(54, 182, 96);
+    }
+
+    .grid-item h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(16, 86, 28);
+    }
+
+    .grid-item h3 {
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(16, 86, 28);
+    }
+
+    .grid-container h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(16, 86, 28);
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html" class="name">HEALTHY RECIPES</a>
+        <a href="http://127.0.0.1:5500/Dinner.html">Dinner</a>
+        <a href="http://127.0.0.1:5500/Lunch.html">Lunch</a>
+        <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html">Home</a>
+    </nav>
+    <br>
+    <img src="https://www.eatingwell.com/thmb/jG1oWlQRxzCPxwaPLbFUyEmoGEU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3747954-375f86c89b1e44a08e36c754fb5a4a37.jpg"
+        alt="Cinnamon Roll Overnight Oats" height="300" width="300">
+    <div class="grid-container">
+        <h2 align="center">Inside-Out Lasagna</h2>
+        <div class="grid-item">
+            <h3 align="left">Nutrition Profile</h3>
+            <ul align="left">
+                <li>Dairy-Free</li>
+                <li>Healthy Aging </li>
+                <li>Low-Sodium</li>
+                <li>Soy-Free</li>
+                <li>High-Fiber</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3 align="left">Ingridients</h3>
+            <ul align="left">
+                <li>8 ounces whole-wheat rotini or fusilli </li>
+                <li>¾ cup water</li>
+                <li>1 tablespoon onion</li>
+                <li>8 ounces sliced white mushrooms</li>
+                <li>8 cups baby spinach</li>
+                <li>1/2 teaspoon crushed red peppe</li>
+                <li>¾ cup part-skim ricotta cheese</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3 align="left">Instructions</h3>
+            <ul align="left">
+                <li>Bring a large pot of water to a boil. Add pasta; cook until just tender, 8 to 10 minutes or
+                    according to package directions. Drain and transfer to a large bowl.</li>
+                <li>Meanwhile, heat oil in a large nonstick skillet over medium heat. Add onion and garlic and cook,
+                    stirring, until soft and beginning to brown, about 3 minutes. Add mushrooms, salt and pepper and
+                    cook, stirring, until the mushrooms release their liquid, 4 to 6 minutes.</li>
+                <li>Add tomatoes, spinach and crushed red pepper (if using). Increase heat to medium-high; cook,
+                    stirring once halfway through, until the spinach is wilted, about 4 minutes.</li>
+                <li>Toss the sauce with the pasta and divide among 4 bowls. Dollop each serving with 3 tablespoons of
+                    ricotta.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

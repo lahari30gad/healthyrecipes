@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    nav {
+        font-weight: bold;
+        background-color: rgba(1, 86, 21, 0.9);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        top: 10px;
+        position: abslute;
+    }
+
+    nav a:not(.name) {
+        float: right;
+    }
+
+    nav a {
+        font-size: 20px;
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .name {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        float: left;
+    }
+
+
+    nav::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .grid-container {
+
+        position: relative;
+        top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .grid-item {
+        background-color: rgba(203, 243, 206, 0.8);
+        border-radius: 25%;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 400px;
+        max-width: 500px;
+    }
+
+    .grid-item p {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 20px;
+        color: rgb(54, 182, 96)
+    }
+
+    .grid-item h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(16, 86, 28)
+    }
+
+    .grid-item input {
+        background-color: rgba(1, 86, 21, 0.9);
+        color: white;
+        border-color: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bolder;
+    }
+
+    .grid-item img {
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html" class="name">HEALTHY RECIPES</a>
+        <a href="http://127.0.0.1:5500/Dinner.html">Dinner</a>
+        <a href="http://127.0.0.1:5500/Lunch.html">Lunch</a>
+        <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+        <a href="http://127.0.0.1:5500/HealthyRecipes.html">Home</a>
+    </nav>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/lZDGhZai2Bq5gY5sPiDdaXF55ww=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/veggie-hummus-sandwich-1x1-b43dea0c80a04c068ce3cf0782924327.jpg"
+                height="300" width="300">
+            <h2>Veggie & Hummus Sandwich</h2>
+            <p>This veggie-hummus-sandwich is a great way to boost your energy.</p>
+            <input type="button" value="View Recipe" onclick="window.location.href='http://127.0.0.1:5500/lunch1.html'">
+        </div>
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/7iwKOqOilAZ6zbb7EYde6AiTxr8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/61835991-29a304dc1cd44247be98e68bd5ae92b0.jpg"
+                height="300" width="300">
+            <h2>Chickpea & Roasted Red Pepper Lettuce Wraps with Tahini Dressing</h2>
+            <p>Chickpea& Roasted Red Pepper is a great way to boost your energy.</p>
+            <input type="button" value="View Recipe" onclick="window.location.href='http://127.0.0.1:5500/lunch2.html'">
+        </div>
+        <div class="grid-item">
+            <img src="https://www.eatingwell.com/thmb/JbcKhF5tMv6VPCeiHVc0IxILKfY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3-ingredient-creamy-chicken-salad-75627d762a7845579b5a520be6d75729.jpg"
+                height="300" width="400">
+            <h2>3-Ingredient Creamy Rotisserie Chicken Salad</h2>
+            <p>T3-Ingredient Creamy Rotisserie Chicken Salad is a great way to boost your energy.</p>
+            <input type="button" value="View Recipe" onclick="window.location.href='http://127.0.0.1:5500/lunch3.html'">
+        </div>
+
+    </div>
+</body>
+
+</html>
